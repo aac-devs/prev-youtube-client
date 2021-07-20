@@ -1,9 +1,15 @@
-function App() {
+import { BrowserRouter } from 'react-router-dom';
+import Views from './components/content/Views';
+import Layout from './components/layout/Layout';
+
+const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Views />
+      </Layout>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
